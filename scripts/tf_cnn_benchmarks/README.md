@@ -20,7 +20,7 @@ Models](https://github.com/tensorflow/models/tree/master/official).
 To run ResNet50 with synthetic data without distortions with a single GPU, run
 
 ```
-python tf_cnn_benchmarks.py --num_gpus=1 --batch_size=32 --model=resnet50 --variable_update=parameter_server
+python tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=resnet44 --variable_update=parameter_server
 ```
 
 Note that tf_cnn_benchmarks currently requires the latest nightly version of
