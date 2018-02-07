@@ -150,7 +150,7 @@ class Cifar10Data(Dataset):
 
     inputs = []
     for filename in filenames:
-      with gfile.Open(filename, 'r') as f:
+      with gfile.Open(filename, 'rb') as f:
         inputs.append(cPickle.load(f))
     # See http://www.cs.toronto.edu/~kriz/cifar.html for a description of the
     # input format.
